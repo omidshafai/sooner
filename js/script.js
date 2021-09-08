@@ -199,66 +199,6 @@ var menu = $('#mainNav'),
 
 //--------------------------------- End form validation--------------------------------//
 
-//---------------------------------- Google map location -----------------------------------------//
-
-// Create an array of styles.
-var styles = [
-		        {
-		            stylers: [
-		                { saturation: -200 }
-						
-		            ]
-		        },{
-		            featureType: 'road',
-		            elementType: 'geometry',
-		            stylers: [
-		                { hue: "#cccccc" },
-		                { visibility: 'simplified' }
-		            ]
-		        },{
-		            featureType: 'road',
-		            elementType: 'labels',
-		            stylers: [
-		                { visibility: 'off' }
-		            ]
-		        }
-		      ],
-				
-				// Lagitute and longitude for your location goes here
-		       lat = 33.997669,
-		       lng = -6.847868,
-		
-			  // Create a new StyledMapType object, passing it the array of styles,
-			  // as well as the name to be displayed on the map type control.
-		      customMap = new google.maps.StyledMapType(styles,
-		          {name: 'Styled Map'}),
-		
-			// Create a map object, and include the MapTypeId to add
-			// to the map type control.
-		      mapOptions = {
-		          zoom: 14,
-		          center: new google.maps.LatLng( lat, lng ),
-		          mapTypeControlOptions: {
-		              mapTypeIds: [google.maps.MapTypeId.ROADMAP]
-		          }
-		      },
-		      map = new google.maps.Map(document.getElementById('map'), mapOptions),
-		      myLatlng = new google.maps.LatLng( lat, lng ),
-
-		      marker = new google.maps.Marker({
-		        position: myLatlng,
-		        map: map,
-				icon: "images/marker.png"
-		      });
-				
-			  //Associate the styled map with the MapTypeId and set it to display.
-		      map.mapTypes.set('map_style', customMap);
-		      map.setMapTypeId('map_style');
-	
-//---------------------------------- End google map location -----------------------------------------//
-
-
-
 //---------------------------------- Testimonials-----------------------------------------//
 $('#testimonials').slides({
 	preload: false,
