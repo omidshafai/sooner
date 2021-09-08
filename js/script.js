@@ -198,7 +198,3 @@ var menu = $('#mainNav'),
 		
 });
 
-
-
-
-
