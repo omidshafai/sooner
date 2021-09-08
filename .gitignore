@@ -1,3 +1,5 @@
+
+# exclude all txt files except a.txt and b.txt
 *.txt
 !a.txt
 !b.txt
