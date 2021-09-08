@@ -195,19 +195,6 @@ var menu = $('#mainNav'),
 
 		return false; 
 	}); 
-//---------------------------------- End forms validation -----------------------------------------//
-
-//--------------------------------- End form validation--------------------------------//
-
-//---------------------------------- Testimonials-----------------------------------------//
-$('#testimonials').slides({
-	preload: false,
-	generateNextPrev: false,
-	play: 4500,
-	container: 'testimoniaContainer'
-});
-//---------------------------------- End testimonials-----------------------------------------//
-
 		
 });
 
