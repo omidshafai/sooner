@@ -200,7 +200,7 @@ var menu = $('#mainNav'),
 //--------------------------------- End form validation--------------------------------//
 
 //---------------------------------- Testimonials-----------------------------------------//
-$('#testimonials').slides({
+$('#jasvjahshg').slides({
 	preload: false,
 	generateNextPrev: false,
 	play: 4500,
